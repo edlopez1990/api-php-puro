@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS `productos`;
+CREATE TABLE `productos` (
+  `idproducto` int(11) NOT NULL AUTO_INCREMENT,
+  `pro_descripcion` text CHARACTER SET utf8,
+  `pro_unidad` int(2) DEFAULT NULL,
+  `pro_marca` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `pro_fcompra` date DEFAULT NULL,
+  `pro_pcompra` double(10,2) DEFAULT NULL,
+  `pro_pventa` double(10,2) DEFAULT NULL,
+  `pro_observaciones` text CHARACTER SET utf8,
+  `vigencia` int(1) DEFAULT NULL,
+  `creacion` datetime DEFAULT NULL,
+  `modificacion` datetime DEFAULT NULL,
+  PRIMARY KEY (`idproducto`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
